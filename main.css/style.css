@@ -3,3 +3,100 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 500;
+}
+
+/* utilities */
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.float-left {
+	float: left;
+}
+
+.menu.inline li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 15px;
+}
+
+.menu.inline li:last-child {
+}
+
+/* header */
+
+.main-header {
+	background: #0d325a;
+	line-height: 80px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.main-header .logo {
+	width: 15%;
+}
+
+.main-header .logo img {
+	vertical-align: middle;
+}
+
+.main-header .nav-center {
+	width: 45%;
+}
+
+.main-header .nav-right {
+	width: 40%;
+	text-align: right;
+}
+
+.main-header a {
+	text-decoration: none;
+	color: white;
+}
+
+/* buttons */
+
+.main-header a.btn {
+	line-height: 12px;
+}
+
+.btn {
+	min-width: 100px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid white;
+	line-height: 12px;
+	border-radius: 5px;
+}
+
+.btn.norm {
+	padding: 0;
+	border: 0;
+}
+
+.btn.green {
+	background: #7cbb02;
+	border: 1px solid transparent;
+}
