@@ -36,10 +36,11 @@ h4 {
 .menu.inline li {
 	display: inline-block;
 	list-style: none;
-	margin-right: 15px;
+	margin-right: 20px;
 }
 
 .menu.inline li:last-child {
+	margin-right: 0;
 }
 
 /* header */
@@ -99,4 +100,63 @@ h4 {
 .btn.green {
 	background: #7cbb02;
 	border: 1px solid transparent;
+}
+
+/* jumbotron */
+
+.jumbotron {
+	height: 480px;
+	background: #0d325a;
+	background-image: url(../img/background-header.png);
+	background-size: 1000px;
+	background-repeat: no-repeat;
+	background-position: 150% 120%;
+}
+
+.jumbotron .container {
+	height: 100%;
+	position: relative;
+}
+
+.jumbotron .jumbo-text {
+	width: 48%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.jumbo-text h1 {
+	font-size: 47px;
+	font-weight: 500;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.btn.green-big {
+	padding: 25px;
+	background: #7cbb02;
+	border: 1px solid transparent;
+}
+
+.jumbo-text a {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* grey */
+
+.grey {
+	background: #d3d3d3;
+	text-align: center;
+	padding: 50px;
+}
+
+.grey h2 {
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.grey p {
+	color: #8e8e8e;
 }
