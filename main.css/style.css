@@ -4,9 +4,14 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	font-size: 16px;
+	font-size: 12px;
 	font-family: "Roboto", sans-serif;
+	min-width: 1200px;
 }
 
 h1,
@@ -14,6 +19,10 @@ h2,
 h3,
 h4 {
 	font-weight: 500;
+}
+
+p {
+	color: #808080;
 }
 
 /* utilities */
@@ -41,6 +50,10 @@ h4 {
 
 .menu.inline li:last-child {
 	margin-right: 0;
+}
+
+.w-50 {
+	width: 50%;
 }
 
 /* header */
@@ -75,10 +88,14 @@ h4 {
 	color: white;
 }
 
+.main-header .nav-center a:hover {
+	color: tomato;
+}
+
 /* buttons */
 
 .main-header a.btn {
-	line-height: 12px;
+	line-height: 1px;
 }
 
 .btn {
@@ -90,6 +107,7 @@ h4 {
 	border: 1px solid white;
 	line-height: 12px;
 	border-radius: 5px;
+	text-transform: uppercase;
 }
 
 .btn.norm {
@@ -100,6 +118,29 @@ h4 {
 .btn.green {
 	background: #7cbb02;
 	border: 1px solid transparent;
+	color: white;
+}
+
+.big {
+	padding: 25px;
+	border: 1px solid transparent;
+	font-size: 20px;
+}
+
+.medium {
+	padding: 20px;
+	border: 1px solid transparent;
+	font-size: 16px;
+}
+
+#help {
+	position: fixed;
+	bottom: 0;
+	right: 15%;
+	padding: 15px;
+	font-size: 16px;
+	min-width: 10px;
+	border-radius: 10px 10px 0 10px;
 }
 
 /* jumbotron */
@@ -110,7 +151,7 @@ h4 {
 	background-image: url(../img/background-header.png);
 	background-size: 1000px;
 	background-repeat: no-repeat;
-	background-position: 150% 120%;
+	background-position: 110% 120%;
 }
 
 .jumbotron .container {
@@ -119,7 +160,6 @@ h4 {
 }
 
 .jumbotron .jumbo-text {
-	width: 48%;
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -131,12 +171,6 @@ h4 {
 	font-weight: 500;
 	color: white;
 	margin-bottom: 30px;
-}
-
-.btn.green-big {
-	padding: 25px;
-	background: #7cbb02;
-	border: 1px solid transparent;
 }
 
 .jumbo-text a {
@@ -152,11 +186,153 @@ h4 {
 	padding: 50px;
 }
 
-.grey h2 {
+.grey h3 {
 	font-weight: 500;
 	margin-bottom: 10px;
+	font-size: 22px;
 }
 
 .grey p {
-	color: #8e8e8e;
+	color: #616060;
+	font-size: 18px;
+}
+
+/* plan */
+.plan {
+	margin: auto;
+	text-align: center;
+}
+
+.plan .container {
+	text-align: center;
+}
+
+.column {
+	float: left;
+	width: 33%;
+	padding: 3%;
+}
+
+.column .image {
+	height: 150px;
+	width: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 20px;
+}
+
+.column .image.one {
+	background-image: url(../img/profile.svg);
+}
+
+.column .image.two {
+	background-image: url(../img/computer.svg);
+}
+
+.column .image.three {
+	background-image: url(../img/doc.svg);
+}
+
+.column h2 {
+	color: #7cbb02;
+	font-size: 23px;
+	margin-bottom: 25px;
+}
+
+.plan .column hr {
+	width: 20%;
+	margin: auto;
+}
+
+.column p {
+	line-height: 20px;
+	color: #808080;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+.plan hr {
+	width: 95%;
+	margin: auto;
+}
+/* level */
+.level .container {
+	width: 55%;
+}
+
+.side {
+	display: inline-block;
+	padding: 30px 50px;
+}
+
+.side .mountain {
+	width: 100%;
+	height: 400px;
+	background-image: url(../img/mountain.svg);
+	background-repeat: no-repeat;
+}
+
+.side h2 {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.side p {
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.side a {
+	color: #4395ef;
+	font-size: 12px;
+}
+
+/* footer */
+
+footer {
+	background: #d3d3d3;
+	font-size: 16px;
+	line-height: 150px;
+}
+
+footer h2 {
+	font-size: 28px;
+}
+
+.footer-nav {
+	text-align: right;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: #616060;
+}
+
+select {
+	width: 100px;
+	padding: 0px 0px 0px 0px;
+	font-size: 16px;
+	border: none;
+	height: 20px;
+	appearance: none;
+	display: inline-block;
+	background-color: transparent;
+	color: #616060;
+	margin-right: 0;
+}
+
+select:focus {
+	outline: none;
+}
+
+#standard-select + label::after {
+	content: "\25BE";
+	margin: 0;
+	padding: 0;
+	color: #616060;
+}
+
+span {
+	border-bottom: 1px solid #616060;
 }
