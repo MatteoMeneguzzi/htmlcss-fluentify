@@ -4,9 +4,9 @@
 	box-sizing: border-box;
 }
 
-html {
+/* html {
 	scroll-behavior: smooth;
-}
+} */
 
 body {
 	font-size: 12px;
@@ -136,11 +136,21 @@ p {
 #help {
 	position: fixed;
 	bottom: 0;
-	right: 15%;
+	right: 3%;
 	padding: 15px;
 	font-size: 16px;
 	min-width: 10px;
 	border-radius: 10px 10px 0 10px;
+}
+
+.side a.real {
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	font-size: 14px;
+	width: 200px;
+	text-align: left;
+	line-height: 20px;
+	vertical-align: baseline;
 }
 
 /* jumbotron */
@@ -254,10 +264,11 @@ p {
 .plan hr {
 	width: 95%;
 	margin: auto;
+	border: 1px solid #d3d3d3;
 }
 /* level */
 .level .container {
-	width: 55%;
+	width: 1000px;
 }
 
 .side {
@@ -283,7 +294,7 @@ p {
 	line-height: 18px;
 }
 
-.side a {
+.test {
 	color: #4395ef;
 	font-size: 12px;
 }
@@ -333,6 +344,206 @@ select:focus {
 	color: #616060;
 }
 
-span {
+footer span {
 	border-bottom: 1px solid #616060;
 }
+
+/* deal */
+
+.deal {
+	padding: 80px 0;
+}
+
+.deal .hands {
+	width: 100%;
+	height: 250px;
+	background-image: url(../img2/shakehands.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+}
+.deal h2 {
+	margin-bottom: 50px;
+}
+
+.deal p {
+	margin-bottom: 40px;
+}
+.deal .description {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 25px;
+	width: 50%;
+	text-align: center;
+	color: #4395ef;
+}
+
+.deal hr {
+	border: 1px solid #d3d3d3;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+
+/* devices */
+
+.device {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.device .items {
+	width: 100%;
+	background-image: url(../img2/set.svg);
+	height: 220px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+
+.device h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.device span {
+	color: #7cbb02;
+	margin-left: 5px;
+}
+
+.device p {
+	margin-bottom: 20px;
+}
+
+.device .where {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.device .test {
+	font-size: 14px;
+}
+
+/* company */
+
+.company {
+	background: #0d325a;
+}
+
+.company-text {
+	width: 30%;
+	padding: 80px 0px;
+}
+
+.company .company-text h2 {
+	font-size: 25px;
+	color: #fff;
+	line-height: 35px;
+	margin-bottom: 40px;
+}
+
+.company p {
+	margin-bottom: 30px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/* activities */
+
+.activities .container {
+	width: 60%;
+	text-align: center;
+}
+
+.activities .column {
+	text-align: left;
+}
+
+.activities h2 {
+	font-size: 25px;
+	padding: 70px 0px 50px;
+}
+
+.column .icon {
+	height: 40px;
+	width: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 20px;
+}
+
+.column .icon.one {
+	background-image: url(../img2/student.svg);
+	background-position: left;
+}
+
+.column .icon.two {
+	background-image: url(../img2/worker.svg);
+	background-position: left;
+}
+
+.column .icon.three {
+	background-image: url(../img2/business.svg);
+	background-position: left;
+}
+
+.activities h3 {
+	font-size: 20px;
+}
+
+.activities hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.activities .hr-one {
+	border: 3px solid dodgerblue;
+}
+
+.activities .hr-two {
+	border: 3px solid orange;
+}
+
+.activities .hr-three {
+	border: 3px solid yellowgreen;
+}
+
+.activities .test {
+	font-size: 14px;
+}
+
+.activities .test {
+	font-size: 14px;
+}
+
+.activities .test.two {
+	color: orange;
+}
+
+.activities .test.three {
+	color: yellowgreen;
+}
+
+/* faq */
+
+.faq {
+	background: #0d325a;
+}
+
+.faq-text {
+	width: 30%;
+	padding: 50px 0px;
+}
+
+.faq h2 {
+	color: white;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+.faq span {
+	color: orange;
+}
+
+/* info */
